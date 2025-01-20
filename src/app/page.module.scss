@@ -1,0 +1,44 @@
+.login {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  &__form {
+    &-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      & button {
+        width: fit-content;
+      }
+    }
+    &-title {
+      font-size: 32px;
+      color: #3d3d3d;
+    }
+    &-input-container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 50%;
+    }
+    &-verification {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+
+      &-description {
+        color: #3d3d3d;
+        font-size: 14px;
+      }
+    }
+  }
+
+  &__background {
+    background-color: #5038ed;
+    height: 100%;
+  }
+}
